@@ -5,7 +5,7 @@ dotenv.config();
 const analyticsData = google.analyticsdata('v1beta');
 
 export async function fetchCountryData() {
-    const googleKeyFilePath = '/etc/secrets/apigateway.json';
+    const googleKeyFilePath = '/etc/secrets/api.json';
     const ga4PropertyId = process.env.GA4_PROPERTY_ID;
 
     const auth = new google.auth.GoogleAuth({
