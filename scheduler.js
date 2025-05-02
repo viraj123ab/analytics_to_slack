@@ -12,7 +12,7 @@ import { sendCountryReportToSlack } from './slack_notifier/sendCountryReportToSl
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
-// cron.schedule('08 00 * * *', async () => {
+cron.schedule('40 8 * * *', async () => {
   try {
     console.log('Fetching data from Google Analytics...');
     const analyticsData = await getAnalyticsData();
@@ -36,4 +36,4 @@ function delay(ms) {
   } catch (error) {
     console.error('Error during automation:', error);
   }
-// });
+});
