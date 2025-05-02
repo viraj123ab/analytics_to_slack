@@ -16,7 +16,7 @@ app.listen(port, () => {
 });
 
 // Schedule task to run every day at 9:30 AM (in UTC)
-cron.schedule('00 11 * * *', async () => {
+cron.schedule('05 10 * * *', async () => {
   try {
     console.log('Fetching data from Google Analytics...');
     const analyticsData = await getAnalyticsData();
