@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Environment variable files
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Build output
+dist/
+build/
+
+# macOS system files
+.DS_Store
+
+# Windows image file thumbs
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+api.json
